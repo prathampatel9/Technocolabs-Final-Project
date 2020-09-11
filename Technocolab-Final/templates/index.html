@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+ padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+<style type="text/css">
+    <!--
+    @import url("https://fonts.googleapis.com/css?family=Arizonia");
+    @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+    @import url("https://fonts.googleapis.com/css?family=Alegreya+SC");
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    @import url("https://fonts.googleapis.com/css?family=Alegreya");
+
+    //
+    -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+</style>
+<style>
+body {
+  background-image: url('https://i.pinimg.com/originals/6c/94/6d/6c946d1a194b32d018663b6677c5d732.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+</style>
+</head>
+<body>
+
+ <h2 style="text-align: center;"><span style="font-family: arizonia, handwriting; color: white;"><strong><span style="font-size: 36px;">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp;TECHNOBEATS</span></strong></span></h2>
+
+<p><center><span style="font-family: roboto; sans-serif;font-family:Dancing Script; color:white; font-size: 20px;">This Project will Predict weather you are a Hip Hop fan, Rock Fan, or a Jazz fan. This project is performed under the internship of <strong><I>TECHNOCOLABS</I>&nbsp;</strong>under the guidance of Yassen sir.</span></p>
+</center>
+<section>
+         <form method="POST" action="/predict"><center>
+            <div id="ddr-4e6f55ea41" class="ddr-page-section-wrapper ddr-page-section-wrapper-1">
+                <div class="ddr-page-section-pre-content ddr-page-section-pre-content-1">
+                    <div class="ddr-page-section ddr-page-section-1">
+                        <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-b460edf7af" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">acousticness</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"> <input id="acousticness" placeholder="Some text here..." type="acousticness" name="acousticness" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ddr-d5392ee9a2" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-1 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">danceability</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="danceability" placeholder="Some text here..." type="danceability" name="danceability" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-e6d605df10" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px; color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">energy</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"> <input id="energy" placeholder="Some text here..." type="energy" name="energy" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-8b01eb73c5" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px; color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">instrumentalness</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="instrumentalness" placeholder="Some text here..." type="instrumentalness" name="instrumentalness" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-3 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-5ff68d21e2" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">liveness</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="liveness" placeholder="Some text here..." type="liveness" name="liveness" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-4 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-f77e7b289c" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label"><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">speechiness</span></label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="speechiness" placeholder="Some text here..." type="speechiness" name="speechiness" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-5 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-3a6ccd7f36" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label">tempo</label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="tempo" placeholder="Some text here..." type="tempo" name="tempo" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-6 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-6deb26cc6f" class="ddr-page-widget ddr-page-widget__form-text ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-text ddr-widget__form ddr-widget__form-left" style="margin: 30px; padding-bottom: 15px;color:White;"><label class="ddr-widget__form-text-content ddr-widget__form-label">valence</label>
+                                                <div class="ddr-widget__form-text-input ddr-widget__form-value"><input id="valence" placeholder="Some text here..." type="valence" name="valence" required="" style="width: 250px; height: 30px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-row ddr-page-row-7 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                                <div id="ddr-769b8faec7" class="ddr-page-widget ddr-page-widget__form-submit ddr-page-widget-0 ">
+                                    <div class="ddr-widget">
+                                        <div class="ddr-widget__form-wrapper">
+                                            <div class="ddr-widget__form-submit" style="justify-content: center; margin: 30px; border-radius: 3px; padding-bottom: 15px;"><button id="ddr-widget__form-submit-1700" type="submit" style="padding: 10px 15px; font-size: 18px; border-radius: 3px; cursor: pointer;">Predict</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </center> </form>
+</section>
+    <footer>
+                    <h3 class="display-4">Connect</h3>
+                    
+                
+                <div class="col-12 social padding">
+                 <center>
+                    <a href="https://www.facebook.com/PrathamPatel.09/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Pratham39950559" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/pratham-patel-b38b0719b/" class="fa fa-linkedin"></a>
+                </div></center>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
